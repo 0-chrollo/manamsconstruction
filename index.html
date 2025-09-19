@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mike's Construction Services Renovations | Maintenance</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png">
+           <!--<div class="logo-text">Mike's<span> Construction</span></div>-->
+        </div>
+        
+        <button class="burger" id="burger-menu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </button>
+        
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#location">Location</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" style="background: url('architecture.jpg') no-repeat center center/cover">
+        <h1>Mike's Construction Services<br>Renovations | Maintenance</h1>
+        <p>Creating extraordinary spaces through innovative design and quality craftsmanship. Transform your vision into reality.</p>
+        <a href="about.html" class="btn">Know More <i>→</i></a>
+    </section>
+
+
+   <!-- Contact Form Section -->
+   <!-- Success Popup -->
+<div id="successPopup" class="popup-overlay" style="display:none;">
+    <div class="popup-box">
+      <p>🎉 Your message was sent successfully!</p><br>
+      <button onclick="closePopup()"><a href="index.html">Done</a></button>
+    </div>
+  </div>
+  
+  <!-- Form Section -->
+  <section class="contact-section">
+    <h2>Request a Quote</h2>
+    <p>Please complete the form below, and we'll get back to you shortly</p>
+  
+    <form class="contact-form" action="https://formsubmit.co/4c5945b1d5e22c0ca9a18ed3679c4846" method="POST" target="hidden_iframe" onsubmit="showPopup();">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box"> 
+      
+      <div class="form-group"><input type="text" name="name" placeholder="Your Name" required></div>
+      <div class="form-group"><input type="email" name="email" placeholder="Your Email" required></div>
+      <div class="form-group"><input type="tel" name="phone" placeholder="Phone Number" required></div>
+      <div class="form-group"><input type="text" name="location" placeholder="Location" required></div>
+  
+      <div class="form-group">
+        <select name="purpose" required>
+          <option value="" disabled selected>Purpose of Contact</option>
+          <option value="renovation">Home Renovation</option>
+          <option value="maintenance">Property Maintenance</option>
+          <option value="consultation">Free Consultation</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+  
+      <div class="form-group full-width">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+      </div>
+  
+      <div class="form-group full-width">
+        <button type="submit" class="submit-btn">Get Quote</button>
+      </div>
+    </form>
+    
+    <!-- Hidden iframe -->
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+  </section>
+  
+  <!-- Popup CSS -->
+  <style>
+  .popup-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 1000;
+  }
+  .popup-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  .popup-box button a{
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: rgb(153, 16, 16);
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none;
+  }
+  </style>
+  
+  <!-- JS -->
+  <script>
+  function showPopup() {
+    setTimeout(() => {
+      document.getElementById('successPopup').style.display = 'flex';
+    }, 1000); // Delay to simulate network time
+  }
+  
+  function closePopup() {
+    document.getElementById('successPopup').style.display = 'none';
+  }
+  </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        /* Basic CSS Example to achieve the desired look */
+        /* Apply to your actual stylesheet */
+
+        .companys{
+            font-family: sans-serif; /* Choose a clean font */
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+          
+            color: #0118349f;/* Dark text for readability */
+        }
+
+        .main-content-area {
+            /* Using flex to manage layout */
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
+            /* Align items (h2, p) to the start (left) of the container */
+            align-items: flex-start; 
+            padding: 40px 20px; /* Generous padding top/bottom, standard side */
+            max-width: 900px; /* Limit width for readability on large screens */
+            margin: 0 auto; /* Center the block itself on the page */
+            /* Ensure text within block elements is left-aligned */
+            text-align: left; 
+        }
+
+        .main-content-area h1 {
+            font-size: 1.8em; /* Large, clear heading */
+            margin-bottom: 20px;
+            color:  rgb(177, 23, 23); /* A slightly softer dark color */
+            /* Ensure heading takes appropriate width if needed, though usually block */
+             width: 100%; 
+        }
+
+        .main-content-area p {
+            font-size: 1.2em; /* Comfortable reading size */
+            margin-bottom: 25px; /* Good spacing between paragraphs */
+             /* Remove specific paragraph padding/max-width if container padding is sufficient */
+             /* padding: 0 15px; */
+             /* max-width: 700px; */ 
+             width: 100%; /* Ensure paragraphs use the available width */
+        }
+
+        /* Removing default link styling if you add links later */
+      
+
+    </style>
+<div class="companys">
+    <main class="main-content-area">
+        <img src="logo.png" style="width:27vh;"> 
+       
+        <h1 >Mike's Construction Services: Building Quality, Enhancing Properties</h1>
+
+        <p>
+            Welcome to Mike's Construction, where we bring expertise and dedication to every project. We specialize in a wide array of property improvement and maintenance solutions, tailored to meet the unique needs of homeowners and businesses alike.
+        </p>
+
+        <p>
+            Our commitment is to deliver superior craftsmanship and reliable service. From foundational work to finishing touches, our experienced team ensures your project is handled with professionalism and care, transforming your vision into reality with lasting results.
+        </p>
+
+        <p>
+            Trust us to enhance the value and appeal of your property. Let's discuss how Mike's Construction can help you achieve your goals.
+        </p>
+        <div class="line">
+            <style> 
+                .line{
+                    height: 5px;
+                    width:20vh;
+                    background-color: rgb(177, 23, 23);
+                    margin: auto;
+                    border-radius: 1px;
+                }
+            </style>
+        </div>
+        </main>
+
+    </div>
+
+
+
+
+
+<script src="scripts.js"></script>
+
+
+
+
+</body>
+</html>

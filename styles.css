@@ -354,10 +354,13 @@ body {
             }
             
             nav ul {
+                border-top: 5px solid rgb(186, 33, 33);
+                margin-left:8vh;
                 position: fixed;
-                top: 60px;
+                align-content: baseline;
+                top: 70px;
                 left: 0;
-                width: 100%;
+                width: 30vh;
                 background-color:white;
                 flex-direction: column;
                 align-items: center;

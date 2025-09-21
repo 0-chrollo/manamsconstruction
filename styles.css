@@ -355,14 +355,15 @@ body {
             
             nav ul {
                 border-top: 5px solid rgb(186, 33, 33);
-                margin-left:2.6vh;
+               
                 position: fixed;
-                align-content: baseline;
+                align-content:center;
                 top: 70px;
-                left: 0;
-                width: 40vh;
+                left: 2.3vh;
+             
+                width: 90%;
                 background-color:white;
-                flex-direction: column;
+                flex-direction:column;
                 align-items: center;
                 padding: 20px 0;
                 transform: translateY(-150%);

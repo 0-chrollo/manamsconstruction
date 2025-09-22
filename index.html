@@ -36,12 +36,12 @@
         </nav>
     </header>
     
-    <!-- Hero Section -->
-    <section class="hero" style="background: url('architecture.jpg') no-repeat center center/cover">
-        <h1>Mike's Construction Services<br>Renovations | Maintenance</h1>
-        <p>Creating extraordinary spaces through innovative design and quality craftsmanship. Transform your vision into reality.</p>
-        <a href="services.html" class="btn">Know More <i>→</i></a>
-    </section>
+   <!-- Hero Section -->
+   <section class="hero" style="background: url('architecture.jpg') no-repeat center center/cover">
+    <h1>Manams Construction & Projects<br>Complete Building Solutions</h1>
+    <p>Excellence in construction with transparent pricing and professional service delivery. From residential to commercial projects, we transform your vision into reality with comprehensive project solutions nationwide.</p>
+    <a href="services.html" class="btn">Know More <i>→</i></a>
+</section>
 
 
    <!-- Contact Form Section -->
@@ -66,29 +66,36 @@
     }
     </style>
     <h2 class="quote">Request a Quote</h2>
-    <p>Please complete the form below, and we'll get back to you shortly</p>
+    <p>Complete the form below for your construction project, and our pailed, transparent quote</p>
   
-    <form class="contact-form" action="https://formsubmit.co/4c5945b1d5e22c0ca9a18ed3679c4846" method="POST" target="hidden_iframe" onsubmit="showPopup();">
+    <form class="contact-form" action="https://formsubmit.co/4c5945b1a18ed3679c4846" method="POST" target="hidden_iframe" onsubmit="showPopup();">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="box"> 
       
       <div class="form-group"><input type="text" name="name" placeholder="Your Name" required></div>
       <div class="form-group"><input type="email" name="email" placeholder="Your Email" required></div>
       <div class="form-group"><input type="tel" name="phone" placeholder="Phone Number" required></div>
-      <div class="form-group"><input type="text" name="location" placeholder="Location" required></div>
+      <div class="form-group"><input type="text" name="location" placeholder="Project Location" required></div>
   
       <div class="form-group">
         <select name="purpose" required>
-          <option value="" disabled selected>Purpose of Contact</option>
-          <option value="renovation">Home Renovation</option>
-          <option value="maintenance">Property Maintenance</option>
-          <option value="consultation">Free Consultation</option>
-          <option value="other">Other</option>
+          <option value="" disabled selected>Type of Construction Project</option>
+          <option value="residential">Residential Construction</option>
+          <option value="commercial">Commercial Building</option>
+          <option value="industrial">Industrial Project</option>
+          <option value="renovation">Complete Renovation</option>
+          <option value="architectural">Architectural Design</option>
+          <option value="building-plans">Building Plans & Approvals</option>
+          <option value="engineering">Engineering Services</option>
+          <option value="coatings">Premium Coatings</option>
+          <option value="infrastructure">Infrastructure Services</option>
+        
+         
         </select>
       </div>
   
       <div class="form-group full-width">
-        <textarea name="message" placeholder="Your Message" required></textarea>
+        <textarea name="message" placeholder="Please describe your construction project requirements, timeline, and any specific details..." required></textarea>
       </div>
   
       <div class="form-group full-width">
@@ -213,18 +220,22 @@
     <main class="main-content-area">
         <img src="logo.png" style="width:27vh;"> 
        
-        <h1 >Mike's Construction Services: Building Quality, Enhancing Properties</h1>
+        <h1>Manams Construction & Projects: Excellence in Complete Building Solutions</h1>
 
         <p>
-            Welcome to Mike's Construction, where we bring expertise and dedication to every project. We specialize in a wide array of property improvement and maintenance solutions, tailored to meet the unique needs of homeowners and businesses alike.
+            Welcome to Manams Construction & Projects, where we bring professional expertise and unwavering commitment to every construction project. We specialize in comprehensive building solutions, from initial architectural design to final project completion, serving residential, commercial, and industrial clients nationwide.
         </p>
 
         <p>
-            Our commitment is to deliver superior craftsmanship and reliable service. From foundational work to finishing touches, our experienced team ensures your project is handled with professionalism and care, transforming your vision into reality with lasting results.
+            Our commitment to excellence, combined with transparent pricing and professional service delivery, has earned us the trust of countless clients who rely on us for their most important construction projects. We provide all-inclusive pricing where labor and materials are covered in one comprehensive quote, ensuring complete transparency throughout your project journey.
         </p>
 
         <p>
-            Trust us to enhance the value and appeal of your property. Let's discuss how Mike's Construction can help you achieve your goals.
+            From custom architectural designs and building plan approvals to specialized premium coatings with 10+ year guarantees, we handle every aspect of your construction needs. Our experienced team of professionals ensures consistent quality and adherence to the highest industry standards across all project locations.
+        </p>
+
+        <p>
+            Trust Manams Construction & Projects to transform your vision into reality with our complete project solutions approach. Let's discuss how we can deliver exceptional results for your next construction project.
         </p>
         <div class="line">
             <style> 
@@ -422,14 +433,24 @@
       .carousel-next {
           right: 20px;
       }
-
-      .scroll-hint {
+   
+      .scroll-hint{
           text-align: right;
           margin-top: 10px;
-          color: #7f8c8d;
-          font-size: 14px;
+        
+          font-size: 18.5px;
+       
+          
+          padding:5px
       }
 
+      .linking{
+        color:rgb(162, 48, 48);
+        text-decoration: none;
+        background-color: rgb(226, 209, 209);
+        padding:7px 13px;
+        border-radius: 40px;
+      }
       @media (max-width: 768px) {
           .carousel-nav {
               display: none;
@@ -456,7 +477,6 @@
           }
       }
   </style>
-</head>
 <div class="sl">
   <div class="carousel-container">
     <h2 style="margin:3.5vh;" class="project">Our Work</h2>
@@ -508,7 +528,7 @@
       </div>
       
       <div class="scroll-hint">
-        <h3 style="margin:2vh; color:rgb(162, 48, 48);">view more →</h3>
+        <h3 style="margin:3vh;"><a class="linking" href="gallery.html"> View More →</a> </h3>
       </div>
   </div>
 
@@ -705,39 +725,39 @@
 
 
 <div class="services-list-container">
-  <h2 align="center">Our Comprehensive Services</h2>
-  <div class="services-flex">
-      <div class="service-item">
-          <h3>Professional Painting →</h3>
-          <p>Interior and exterior painting services with premium materials and expert application for beautiful, long-lasting finishes.</p>
-      </div>
-      
-      <div class="service-item">
-          <h3>Landscaping </h3>
-          <p>Transform your outdoor spaces with professional landscaping services including design, planting, hardscaping, and maintenance.</p>
-      </div>
-      
-      <div class="service-item">
-          <h3>Tree Felling →</h3>
-          <p>Safe and efficient tree removal services by our experienced team with proper equipment and disposal methods.</p>
-      </div>
-      
-      <div class="service-item">
-          <h3>Complete Renovations</h3>
-          <p>Comprehensive renovation services for kitchens, bathrooms, basements, and whole-home transformations tailored to your vision.</p>
-      </div>
-      
-      <div class="service-item">
-          <h3>Roofing Solutions →</h3>
-          <p>Expert installation, repair, and maintenance for all roofing types to ensure your property remains protected from the elements.</p>
-      </div>
-      
-      <div class="service-item">
-          <h3>Water Proofing</h3>
-          <p>Effective waterproofing solutions for basements, foundations, and exteriors to prevent moisture damage and protect your investment.</p>
-      </div>
+    <h2 align="center">Our Comprehensive Services</h2>
+    <div class="services-flex">
+        <div class="service-item">
+            <h3>General Construction →</h3>
+            <p>Complete building solutions including residential, commercial, and industrial construction projects with transparent all-inclusive pricing.</p>
+        </div>
+        
+        <div class="service-item">
+            <h3>Architectural Design</h3>
+            <p>Custom architectural designs tailored to your vision and functional requirements, bringing your dream spaces to life.</p>
+        </div>
+        
+        <div class="service-item">
+            <h3>Building Plans & Approvals →</h3>
+            <p>Professional building plan preparation and municipal submission handling to ensure your project meets all regulatory requirements.</p>
+        </div>
+        
+        <div class="service-item">
+            <h3>Engineering Services</h3>
+            <p>Professional engineering drawings and structural assessments providing the technical foundation for safe, durable construction.</p>
+        </div>
+        
+        <div class="service-item">
+            <h3>Premium Coatings →</h3>
+            <p>Specialized Gamazine and Glamor coat applications with 10+ year guarantees for lasting protection and superior finishes.</p>
+        </div>
+        
+        <div class="service-item">
+            <h3>Infrastructure Services</h3>
+            <p>Water connections and municipal infrastructure coordination services ensuring seamless project development and completion.</p>
+        </div>
+    </div>
   </div>
-</div>
 
 
 
@@ -799,7 +819,7 @@
 
   .footer-section p,
   .footer-section li {
-      color: #bdc3c7;
+      color:#ffffff;
       font-size: 0.95em;
       line-height: 1.7;
   }
@@ -813,7 +833,7 @@
   }
 
   .footer-section ul li a {
-      color: #bdc3c7;
+      color:#ffffff;
       text-decoration: none;
       transition: color 0.3s ease;
   }
@@ -858,7 +878,7 @@
   }
 
   .footer-bottom {
-      border-top: 1px solid #34495e;
+      border-top: 1.5px solid gold;
       padding-top: 20px;
       text-align: center;
   }
@@ -872,7 +892,7 @@
   }
 
   .footer-bottom p {
-      color: #95a5a6;
+      color: #ffffff;
       font-size: 0.9em;
   }
 
@@ -883,7 +903,7 @@
   }
 
   .footer-bottom-links a {
-      color: #95a5a6;
+      color: #ffffff;
       text-decoration: none;
       font-size: 0.9em;
       transition: color 0.3s ease;
@@ -941,56 +961,55 @@
 </style>
 
 
-
 <footer class="footer">
-  <div class="footer-container">
-      <div class="footer-content">
-          <!-- Company Info Section -->
-          <div class="footer-section">
-              <div class="social-links">
-                  <a href="https://www.facebook.com/mauerpowersolar"><i class="fab fa-facebook-f"></i></a>
-                  <a href="https://wa.me/+27632005066" target="_blank"><i class="fab fa-whatsapp"></i></a>
-              </div>
-          </div>
-
-          <!-- Services Section -->
-          <div class="footer-section">
-              <h3>Our Services</h3>
-              <ul>
-                  <li>Battery Storage Solutions</li>
-  <li>Hybrid Solar System Installation</li>
-  <li>Solar System Upgrade</li>
-  <li>Off-grid Solar System Installation</li>
-  <li>Inverter Installation / Replacement</li>
-  <li>Residential Solar Installation</li>
-  <li>Commercial Solar Installation</li>
-  <li>DB Board & Electrical Wiring</li>
-              </ul>
-          </div>
-
-          <!-- Quick Links Section -->
-          <div class="footer-section">
-              <h3>Quick Links</h3>
-              <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="#reviews">Testimonials</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-             
-              </ul>
-          </div>
-
-      </div>
-
-      <!-- Footer Bottom -->
-      <div class="footer-bottom">
-          <div class="footer-bottom-content">
-              <p>&copy; 2025 Manams Construction. All rights reserved. Powered by Lucas Mkohlakali</p>
-             
-          </div>
-      </div>
-  </div>
-</footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <!-- Company Info Section -->
+            <div class="footer-section">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/manaams.construction" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/+27632005066" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+  
+            <!-- Services Section -->
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li>General Construction</li>
+                    <li>Architectural Design</li>
+                    <li>Building Plans & Approvals</li>
+                    <li>Engineering Services</li>
+                    <li>Premium Coatings (Gamazine & Glamor)</li>
+                    <li>Infrastructure Services</li>
+                    <li>Residential Construction</li>
+                    <li>Commercial & Industrial Projects</li>
+                </ul>
+            </div>
+  
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="service.jpg">Our services</a></li>
+                    <li><a href="gallery.html">Projects</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                   
+                </ul>
+            </div>
+  
+        </div>
+  
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 Manams Construction & Projects. All rights reserved. Powered by Lucas Mkohlakali</p>
+               
+            </div>
+        </div>
+    </div>
+  </footer>
 
 
 <script src="scripts.js"></script>

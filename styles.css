@@ -129,7 +129,7 @@ body {
             justify-content: center;
             padding: 0 8%;
             color: white;
-            margin-top: 60px;
+            margin-top: 0px;
         }
         
         .hero h1 {
@@ -174,6 +174,7 @@ body {
         
         /* Contact Form Section */
         .contact-section {
+           
             padding: 60px 8%;
             background-color: rgb(255, 249, 249);
             border-radius: 2px;

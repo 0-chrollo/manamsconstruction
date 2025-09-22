@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Mike's Construction Services Renovations | Maintenance</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header align="center">
+        <div class="logo">
+            <img src="logo.png">
+           <!--<div class="logo-text">Mike's<span> Construction</span></div>-->
+        </div>
+        <button class="burger" id="burger-menu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </button>
+
+        <nav>
+            <ul id="nav-menu">         
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">contact</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" style="background: url('architecture.jpg') no-repeat center center/cover">
+        <h1>Mike's Construction Services<br>Renovations | Maintenance</h1>
+        <p>Creating extraordinary spaces through innovative design and quality craftsmanship. Transform your vision into reality.</p>
+        <a href="index.html" class="btn"><i>← </i>Home page</a>
+    </section>
+
+
+
+
+    <style>
+
+        .contact-container {
+            font-family: 'Inter';
+            background-color:rgb(153, 16, 16);/* A color sampled from the image */
+            color: #ffffff;
+            padding: 3rem 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-wrapper {
+            width: 100%;
+            max-width: 1100px; /* Limits the width on very large screens */
+        }
+
+        /* --- Typography --- */
+        .contact-wrapper h1 {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+        }
+
+        .contacting h2 {
+            font-size: 1.75rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .contacting .info-item {
+            margin-bottom: 1.25rem;
+        }
+
+        .contacting .info-item strong {
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+
+        .content-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        .contacting,
+        .contact-form {
+            flex: 1 1 400px; /* Each column will try to be at least 400px */
+        }
+
+        /* --- Form Styling --- */
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* This handles the side-by-side Name and Email fields */
+        .form-row {
+            display: flex;
+            flex-wrap: wrap; /* Allows them to stack on small screens */
+            gap: 1rem;
+        }
+
+        .form-row .input-group {
+            flex: 1 1 200px; /* Each field will try to be at least 200px */
+        }
+        
+        .input-group {
+            width: 100%;
+        }
+
+        /* Styling for all input fields and the textarea */
+        .form-input {
+            width: 100%;
+            padding: 1rem;
+            background-color: #ffffff;
+            border: 1px solid transparent;
+            border-radius: 2px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            color: #333;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-input::placeholder {
+            color: #888;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #d4a355; /* Highlight color on focus */
+            box-shadow: 0 0 0 3px rgba(212, 163, 85, 0.3);
+        }
+
+        textarea.form-input {
+            min-height: 150px;
+            resize: vertical; /* Allow user to resize vertically */
+        }
+
+        /* --- Button Styling --- */
+        .submit-btn {
+            padding: 1rem;
+            background-color: #1E4620; /* A slightly brighter color for the button */
+            color: #ffffff;
+            border: none;
+            border-radius: 2px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #c59445; /* Darken on hover */
+        }
+        
+        .submit-btn:active {
+            transform: scale(0.98); /* Click effect */
+        }
+    </style>
+
+
+    <div class="contact-container">
+        <div class="contact-wrapper">
+            
+            <h1>Request for Sprayit Green Frachise Today</h1>
+
+            <!-- This grid holds the two main columns: Info and Form -->
+            <div class="content-grid">
+                <!-- Left Column: Contact Information -->
+                <div class="contacting">
+                    <h2>Reach Us</h2>
+                    <div class="info-item">
+                        <strong>Location:</strong>
+                        <span>2 Churchill Street, Glendinngvale,Gqeberha,6001,South Africa</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Email:</strong>
+                        <span>info@sprayitgreen.co.za</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Phone:</strong>
+                        <span>+27 83 283 6991</span>
+                    </div>
+                </div>
+
+                <!-- Right Column: Contact Form -->
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <!-- A row for side-by-side inputs -->
+                        <div class="form-row">
+                            <div class="input-group">
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required aria-label="Your Name">
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required aria-label="Your Email">
+                            </div>
+                        </div>
+                        
+                        <!-- Full-width inputs -->
+                        <div class="input-group">
+                            <input type="tel" id="contact_no" name="contact_no" class="form-input" placeholder="Contact No" required aria-label="Contact Number">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="purpose" name="purpose" class="form-input" placeholder="Purpose Of Contact" required aria-label="Purpose Of Contact">
+                        </div>
+                        
+                        <!-- Textarea for the message -->
+                        <div class="input-group">
+                            <textarea id="message" name="message" class="form-input" placeholder="Your Message" required aria-label="Your Message"></textarea>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+

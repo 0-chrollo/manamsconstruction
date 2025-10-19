@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Homepage - Highest Priority (This will be the main search result) -->
+  <url>
+    <loc>https://www.manamsconstructionandprojects.co.za/</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Gallery Page - Lower Priority (Google sees content but won't rank it prominently) -->
+  <url>
+    <loc>https://www.manamsconstructionandprojects.co.za/gallery.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Contact Page - Lower Priority -->
+  <url>
+    <loc>https://www.manamsconstructionandprojects.co.za/contact.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Services Page - Lower Priority -->
+  <url>
+    <loc>https://www.manamsconstructionandprojects.co.za/services.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>
